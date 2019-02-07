@@ -1,2 +1,12 @@
 <h2><%= @author.name %></h2>
-<a href="mailto:<%= @author.email %>"><%= @author.email %></a>
+<p><a href="mailto:<%= @author.email %>"><%= @author.email %></a> </p>
+<p>Tel. <%= @author.phone_number %></p>
+
+
+</ul>
+
+
+<footer>
+<button><%= link_to "Edit", edit_author_path(@author) %></button>
+</footer>
+
